@@ -23,7 +23,6 @@ function calcularEdad(nacimiento) {
     const HOY = new Date()
     const FECHA_NAC = new Date(nacimiento)
     let edad = HOY.getFullYear() - FECHA_NAC.getFullYear()
-    let mes = HOY.getMonth() - FECHA_NAC.getMonth()
 
     if (HOY.getDate() < FECHA_NAC.getDate()) {
         edad--
